@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #FFFFFF;
+}
+
+#navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    z-index: 10;
+    background-color: black;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+.logo {
+    order: 0;
+    flex: 1;
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav li a {
+    display: block;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.item.button {
+    width: auto;
+    order: 1;
+    display: block;
+    padding: 9px 5px;
+}
+
+.nav li.button a {
+    padding: 10px 15px;
+    margin: 5px 0;
+}
+
+.button a {
+    background: #0080ff;
+    border: 1px royalblue solid;
+}
+
+.button.secondary a {
+    background: transparent;
+    border: 1px #0080ff solid;
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+}
+
+#about h1 {
+    font-size: 65px;
+}
+
+#about p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+    color: black;
+}
+
+#project {
+    text-align: center;
+    padding: 100px 30px;
+    background-color: #74EBD5;
+    background: linear-gradient(to right, #74EBD5 0%, #9FACE6 100%);
+}
+
+#project h2 {
+    font-weight: 700;
+    margin: auto;
+    font-size: 50px;
+    border-bottom: 1px solid white;
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+
+.projects-list-grid {
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 60px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.projects-list-grid a {
+    background-color: black;
+    border-radius: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.projects-list-grid img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects-list-grid p {
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.code {
+    color: #FFFFFF;
+    transition: color 0.3s, ease-out;
+}
+
+.button-show-all {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    background-color: #FFFFFF;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+}
+
+.contact-header h2 {
+    font-size: 60px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    text-shadow: 2px 2px 1px black;
+    transition: transform 0.3s ease-out;
+}
+
+#footer {
+    background-color: black;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
